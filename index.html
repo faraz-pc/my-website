@@ -1,309 +1,339 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn&display=swap" rel="stylesheet">
+  <title>چاپ و تکثیر طلا | خدمات کپی و چاپ دانشجویی</title>
+  <meta name="description" content="خدمات چاپ و تکثیر طلا: چاپ سیاه و سفید، سیمی کردن جزوات، پرینت دانشجویی و ارسال به سراسر کشور با قیمت مناسب.">
+  <meta name="keywords" content="چاپ, تکثیر, پرینت, کپی, سیمی, جزوه, دانشجویی, چاپ سیاه و سفید, چاپ رنگی, ارسال جزوه">
+  <meta name="author" content="چاپ و تکثیر طلا">
+  <meta property="og:title" content="چاپ و تکثیر طلا">
+  <meta property="og:description" content="خدمات چاپ سیاه و سفید، سیمی کردن جزوات و ارسال به سراسر کشور.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://talaprint.ir">
+  <meta property="og:image" content="https://talaprint.ir/photo21909575376.png">
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Vazirmatn', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8e1;
+    }
 
-    <title>چاپ و تکثیر طلا | خدمات کپی و چاپ دانشجویی</title>
+    /* Header */
+    header {
+      background: #222;
+      color: #d4af37;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
 
-    <meta name="description" content="خدمات چاپ و تکثیر طلا: چاپ سیاه و سفید، سیمی کردن جزوات، پرینت دانشجویی و ارسال به سراسر کشور با قیمت مناسب.">
-    <meta name="keywords" content="چاپ, تکثیر, پرینت, کپی, سیمی, جزوه, دانشجویی, چاپ سیاه و سفید, چاپ رنگی, ارسال جزوه">
-    <meta name="author" content="چاپ و تکثیر طلا">
+    .a {
+      width: 80px;
+      height: 70px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #d4af37;
+    }
 
-    <!-- برای نمایش بهتر در شبکه‌های اجتماعی -->
-    <meta property="og:title" content="چاپ و تکثیر طلا">
-    <meta property="og:description" content="خدمات چاپ سیاه و سفید، سیمی کردن جزوات و ارسال به سراسر کشور.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://talaprint.ir">
-    <meta property="og:image" content="https://talaprint.ir/photo21909575376.png">
-    <style>
-        html{
-            scroll-behavior: smooth ;
-        }
-        body {
-            font-family: 'Vazirmatn' , Arial , sans-serif ;
-            padding: 0;
-            margin: 0;
-        }
-        header { 
-            text-align: center;
-            background-color: #222;
-            display: flex;
-            justify-content: space-between;
+    .headeru {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0;
+    }
+
+    .head {
+      list-style: none;
+    }
+
+    .heada {
+      text-decoration: none;
+      color: #d4af37;
+      padding: 10px 15px;
+      font-size: 18px;
+      transition: all 0.3s;
+    }
+
+    .heada:hover {
+      color: #ffcc33;
+    }
+
+    /* Hero section */
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .diva {
+      background-color: #d4af37;
+      color: #111;
+      padding: 15px 25px;
+      border-radius: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      display: inline-block;
+      transition: 0.3s;
+    }
+
+    .diva:hover {
+      background-color: #333;
+      color: #ffd700;
+      box-shadow: 0 5px 10px #111;
+    }
+
+    /* Services */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .herodiv1, .herodiv2, .herodiv3, .herodiv4 {
+      background: #111;
+      color: #d4af37;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #d4af37;
+      width: 270px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .herodiv1:hover, .herodiv2:hover, .herodiv3:hover, .herodiv4:hover {
+      transform: translateY(-5px);
+    }
+
+    .herodiv1 img, .herodiv2 img, .herodiv3 img, .herodiv4 img {
+      border-radius: 10px;
+      width: 100%;
+      height: auto;
+    }
+    
+    .herodiv1:active, .herodiv2:active, .herodiv3:active, .herodiv4:active {
+        transform: scale(1.03) translateY(-3px);
+        box-shadow: 0 0 20px #d4af37;
+        transition: all 0.2s ease;
+    }
+
+    /* Price cards */
+    .price {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .price > div {
+      background-color: #111;
+      color: #d4af37;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #d4af37;
+      width: 260px;
+    }
+
+    /* Contact buttons */
+    .sefaresh {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .sefaresh a {
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 15px 25px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .sefaresh a:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 10px #111;
+    }
+
+    /* Footer */
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: right;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+      transition: 0.3s;
+    }
+
+    footer a:hover {
+      color: #d4af37;
+    }
+
+    footer p {
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        header {
+            flex-direction: column;
             align-items: center;
-            padding: 10px 20px ;
-            flex-wrap: wrap;
+            text-align: center;
         }
-        .a{ 
-            width: 80px ;
-            height: 70px;
-            border-radius: 50%;
-            padding: 0 ;
-            box-shadow: 0 0 10px #d4af37;
-        }
-        .headeru{
-            display: flex;
+
+        .headeru {
+            flex-direction: column;
+            gap: 8px;
             padding: 0;
-            flex-wrap: wrap;
         }
-        .head { 
-            list-style: none;
-            padding: 0 ;
-        }
+
         .heada {
-            text-decoration: none;
-            color: #d4af37;
-            padding: 15px;
-            font-size: 18px ;
-            transition: all 0.3s ease;
+            font-size: 16px;
+            padding: 8px 0;
         }
-        .heada:hover { 
-            color: #ffcc33;
-        }
-        .heada1 {
-            background-color: #d4af37;
-            text-decoration: none;
-            color: black;
-            padding: 15px;
-            font-size: 18px ;
-            border-radius: 10px ;
-            transition: all 0.4s ease;
-        }
-        .heada1:hover { 
-            background-color: #333;
-            color: #ffd700;
-            box-shadow: 0 0 15px #d4af37;
-        }
-        section {
-            padding: 10px 20px  ;
-            background: linear-gradient(180deg , #fff8e1 ,#f4f3ef);
-
-        }
-        .divli { 
-            list-style: none;
-            padding: 0;
-        }
-
-        .diva { 
-            background-color: #d4af37;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 20px ;
-            color: #111;
-            padding: 15px;
-            font-size: 18px ;
-            border-radius: 10px ;
-            transition: all 0.4s ease;
-            font-weight: bold;
-        }
-        .diva:hover {
-            background-color: #333;
-            color: #ffd700;
-            box-shadow: 0 10px 15px #111;
-        }
-
 
         .hero {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 25px ;
-            margin-top: 80px ;
-            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .herodiv1 , .herodiv2 , .herodiv3 , .herodiv4{
-            background-color: #111;
-            color: #d4af37;
-            margin: 10px ;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px #d4af37;
-            text-align: center;
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 0.8s forwards;
-            transition: all 0.3s ease;
+        .herodiv1, .herodiv2, .herodiv3, .herodiv4 {
+            width: 90%;
         }
 
-        .herop {
-            font-weight: bold;
+        .price {
+            flex-direction: column;
+            align-items: center;
         }
 
-        .herodiv1:hover ,.herodiv2:hover ,.herodiv3:hover ,.herodiv4:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 15px #d4af37;
-        }
-        .hero img {
-            border-radius: 10px ;
-            margin-bottom: 10px ;
+        .price > div {
+            width: 90%;
+            margin-bottom: 15px;
         }
 
-        .sefaresh a:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 10px #111;
+        .sefaresh {
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
         }
 
         footer {
-            background-color: #222;
+            text-align: center;
+        }
+
+        footer a {
             display: block;
-            text-align: right;
-            padding: 10px;
-            color: white;
-            list-style: none;
+            margin: 5px 0;
         }
-
-        footer p { 
-            font-weight: bold;
-            font-size: 16px;
-        }
-
-        footer a { 
-            text-decoration: none;
-            color: white;
-            font-size: 16px;
-            font-weight: bold;
-            margin: 10px;
-            transition: all 0.3s ease;
-        }
-        footer a:hover { 
-            color: #d4af37;
-        }
-
-        @media (max-width: 768px) {
-            .headeru {
-                gap: 5px; /* کم کردن فاصله برای جا شدن کنار هم */
-                justify-content: center; /* وسط چین شدن لینک‌ها */
-            }
-            .heada, .heada1 {
-                padding: 8px 10px; /* کاهش اندازه padding برای موبایل */
-                font-size: 16px; /* متن کمی کوچکتر */
-            }
-            .a { 
-                width: 60px; 
-                height: 60px; 
-            }
-            .hero {
-                flex-direction: column;
-                align-items: center;
-                margin-top: 40px ;
-            }
-            .herodiv1 , .herodiv2 , .herodiv3 , .herodiv4 {
-                width: 90%;
-                margin: 10px 0;
-            }
-            .sefaresh {
-                flex-direction: column;
-                gap: 10px ;
-                align-items: center;
-            }
-        }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-    </style>
+    
+    }
+    
+  </style>
 </head>
+
 <body>
-    <header>
-        <img class="a" src="photo21909575376.png" alt="لوگو سایت ">
-        <ul class="headeru">
-            <li class="head"><a class="heada" href="#home" target="_blank">خانه</a></li>
-            <li class="head"><a class="heada" href="#service" target="_blank">خدمات </a></li>
-            <li class="head"><a class="heada" href="#price" target="_blank">قیمت ها </a></li>
-            <li class="head"><a class="heada" href="#contact" target="_blank">تماس با ما</a></li>
-            <li class="head"><a class="heada1" href="#signin" target="_blank">ورود</a></li>
-        </ul>
-    </header>
-    <section>
-        <div style="text-align: center;">
-            <h1 style="color: #d4af37; margin-bottom: 15px ;">چاپ و تکثیر طلا</h1>
-            <p style="font-weight: bold; color: #222; line-height: 1.8;">چاپ و تکثیر طلا با بیش از ۲۰ سال تجربه در صنعت چاپ  سیاه و سفید<br>
-            در خدمت هموطنان عزیز <br>
-            تضمین کیفیت , با بهترین دستگاه ها لیزری اچ پی 
-            </p>
-            <li class="divli"><a class="diva" href="#contant">همین الان سفارش بده</a></li>
+  <!-- هدر -->
+  <header>
+    <img class="a" src="photo21909575376.png" alt="لوگو سایت ">
+    <ul class="headeru">
+      <li class="head"><a class="heada" href="#contant">ثبت سفارش </a></li>
+      <li class="head"><a class="heada" href="#service" >خدمات </a></li>
+      <li class="head"><a class="heada" href="#price">قیمت ها </a></li>
+      <li class="head"><a class="heada" href="#contact">تماس با ما</a></li>
+    </ul>
+  </header>
+
+  <!-- معرفی -->
+  <section>
+    <h1 style="color:#d4af37;">چاپ و تکثیر طلا</h1>
+    <p><b>چاپ و تکثیر طلا با بیش از ۲۰ سال تجربه در صنعت چاپ سیاه و سفید<br>
+       تضمین کیفیت، با بهترین دستگاه‌های لیزری اچ پی</b></p>
+    <a class="diva" href="#contant">همین الان سفارش بده</a>
+
+    <!-- خدمات -->
+    <h2 id="service" style="color:#d4af37;margin-top:40px;">آنچه ما ارائه می‌دهیم</h2>
+    <div class="hero">
+      <div class="herodiv1">
+        <img src="photo21963168894.jpg" alt="چاپ سیاه و سفید">
+        <h3>چاپ سیاه و سفید</h3>
+        <p>کیفیت چاپی که میتوانید به آن اعتماد کنید<br> خدمات سریع و حرفه‌ای</p>
+      </div>
+      <div class="herodiv2">
+        <img src="photo21962888575.jpg" alt="چاپ رنگی">
+        <h3>چاپ رنگی</h3>
+        <p>رنگ‌هایی که حرف می‌زنند<br>چاپ حرفه‌ای با وضوح بالا</p>
+      </div>
+      <div class="herodiv3">
+        <img src="photo21962888296.jpg" alt="سیمی کردن جزوات">
+        <h3>سیمی کردن جزوات</h3>
+        <p>جزوات خود را سیمی کنید، حرفه‌ای و مرتب</p>
+      </div>
+      <div class="herodiv4">
+        <img src="bff952.png" alt="ارسال به سراسر کشور">
+        <h3>ارسال به سراسر کشور</h3>
+        <p>ارسال سریع و مطمئن با بسته‌بندی ایمن</p>
+      </div>
+    </div>
+
+    <!-- قیمت‌ها -->
+    <h2 id="price" style="color:#d4af37;margin-top:50px;">بهترین کیفیت، مناسب‌ترین قیمت</h2>
+    <div class="price">
+        <div>
+            <h3>چاپ سیاه و سفید</h3>
+            <p>هر برگ A4 تک رو: <strong>1,000تومان</strong></p>
+            <p>هر برگ A4 دورو: <strong>1,000تومان</strong></p>
         </div>
-
-        <div class="hero">
-            <div class="herodiv1">
-                <img src="photo21963168894.jpg" alt="چاپ سیاه و سفید " style="width: 250px ; height: 200px ;">
-                <h2 style="margin-top: 15px;">چاپ سیاه و سفید</h2>
-                <p class="herop">کیفیت چاپی که میتوانید به آن اعتماد کنید <br>
-                    سیاه  و سفید با وضوح بالا و جزئیات دقیق <br>
-                     خدمات سریع و حرفه ای برای هر پروژه شما 
-                </p>
+        <div>
+            <h3>چاپ رنگی</h3>
+            <p>هر برگ A4 تک رو: <strong>10,000 تومان</strong></p>
+            <p>هر برگ A4 دورو: <strong>12,000 تومان</strong></p>
             </div>
-
-            <div class="herodiv2">
-                <img src="photo21962888575.jpg" alt="چاپ رنگی  " style="width: 250px ; height: 200px ;">
-                <h2 style="margin-top: 15px;">چاپ رنگی</h2>
-                <p class="herop">رنگ هایی که حرف میزنند  <br>
-                    چاپ رنگی با وضوح عالی و جلوه حرفه ای <br>
-                    خدمات سریع و مطمئن برای پروژه های شما 
-                </p>
-            </div>
-
-            <div class="herodiv3">
-                <img src="photo21962888296.jpg" alt="سیمی کردن جزوات" style="width: 250px ; height: 200px ;">
-                <h2 style="margin-top: 15px;">سیمی کردن جزوات</h2>
-                <p class="herop">جزوات خود را سیمی کنید , حرفه ای و مرتب <br>
-                    پوشش کامل صفحات , دوام طولانی و ظاهری شیک <br>
-                    خدمات سریع و قابل اعتماد 
-                </p>
-            </div>
-
-            <div class="herodiv4">
-                <img src="bff952.png" alt="ارسال به سراسر کشور " style="width: 250px ; height: 200px ;">
-                <h2 style="margin-top: 15px;">ارسال به سراسر کشور </h2>
-                <p class="herop">سفارش خود را از هر نقطه کشور دریافت کنید <br>
-                    ارسال سریع , بسته بندی امن و خدمات مطمئن  <br>
-                    چاپ و تکثیر بدون محدودیت جغرافیایی
-                </p>
-            </div>
+        <div>
+            <h3>سیمی کردن جزوه</h3>
+            <p>تا ۱۰۰ برگ: <strong>30,000 تومان</strong></p>
+            <p>هر ۵۰ برگ اضافه: <strong>5,000 تومان</strong></p>
         </div>
-
-        <h2 id="contant" style="text-align: center; margin-bottom: 40px; color: #333;">کافیه پیام بدی بقیش با ما </h2>
-        <div class="sefaresh" style="display:flex; flex-wrap:wrap; justify-content:center; gap:15px;">
-            <!-- واتساپ -->
-            <a href="https://wa.me/9383920160" target="_blank" style="background:#25D366; color:#fff; padding:15px 25px; border-radius:10px; text-decoration:none; font-weight:bold;">
-                واتساپ
-            </a>
-
-            <!-- ایتا -->
-            <a href="https://eitaa.com/@tala_chapp" target="_blank" style="background:#0088cc; color:#fff; padding:15px 25px; border-radius:10px; text-decoration:none; font-weight:bold;">
-                ایتا
-            </a>
-
-            <!-- شاد -->
-            <a href="https://shad.ir/@Tala_chapp" target="_blank" style="background:#ff9800; color:#fff; padding:15px 25px; border-radius:10px; text-decoration:none; font-weight:bold;">
-                شاد
-            </a>
-
-            <!-- روبیکا -->
-            <a href="https://rubika.ir/@tala_chapp" target="_blank" style="background:#e60f0f; color:#fff; padding:15px 25px; border-radius:10px; text-decoration:none; font-weight:bold;">
-                روبیکا
-            </a>
+        <div>
+            <h3>ارسال به سراسر کشور</h3>
+            <p>از طریق پست و تیپاکس</p>
+            <p>هزینه بر اساس وزن و شهر مقصد محاسبه می‌شود</p>
         </div>
+    </div>
 
-    </section>
+    <!-- تماس -->
+    <h2 id="contant" style="color:#333;margin-top:40px;">کافیه پیام بدی، بقیش با ما!</h2>
+    <div class="sefaresh">
+      <a href="https://wa.me/9383920160" target="_blank" style="background:#25D366;">واتساپ</a>
+      <a href="https://eitaa.com/@tala_chapp" target="_blank" style="background:#0088cc;">ایتا</a>
+      <a href="https://shad.ir/@Tala_chapp" target="_blank" style="background:#ff9800;">شاد</a>
+      <a href="https://rubika.ir/@tala_chapp" target="_blank" style="background:#e60f0f;">روبیکا</a>
+    </div>
+  </section>
 
-    <footer>
-        <h2>اطلاعات تماس </h2>
-        <p>شماره تلفن :‌09383920160</p>
-        <p>آدرس : ارومیه خیابان مدرس چهارراه همافر جنب فروشگاه رفاه چاپ و تکثیر طلا</p>
-
-        <h2>شبکه های اجتماعی </h2>
-        <a href="https://wa.me/9383920160" target="_blank">واتساپ</a>
-        <a href="https://eitaa.com/@tala_chapp" target="_blank">ایتا</a>
-        <a href="https://shad.ir/@Tala_chapp" target="_blank">شاد</a>
-        <a href="https://rubika.ir/@tala_chapp" target="_blank">روبیکا</a>
-
-        <p style="text-align: center; font-size: 16px ;">© ۲۰۲۵ چاپ و تکثیر طلا. تمامی حقوق محفوظ است.</p>
-    </footer>
+  <!-- فوتر -->
+  <footer id="contact">
+    <h2>اطلاعات تماس</h2>
+    <p>شماره تلفن: 09383920160</p>
+    <p>آدرس: ارومیه، خیابان مدرس، چهارراه همافر، جنب فروشگاه رفاه، چاپ و تکثیر طلا</p>
+    <h2>شبکه‌های اجتماعی</h2>
+    <a href="https://wa.me/9383920160" target="_blank">واتساپ</a>
+    <a href="https://eitaa.com/@tala_chapp" target="_blank">ایتا</a>
+    <a href="https://shad.ir/@Tala_chapp" target="_blank">شاد</a>
+    <a href="https://rubika.ir/@tala_chapp" target="_blank">روبیکا</a>
+    <p style="text-align:center;font-size:14px;">© ۲۰۲۵ چاپ و تکثیر طلا. تمامی حقوق محفوظ است.</p>
+  </footer>
 </body>
 </html>
+    
